@@ -1,94 +1,112 @@
+# Make Your Own GPT
 
-# 🤖 Make Your Own GPT
-
-Welcome to **Make Your Own GPT** – a full-stack, production-ready GPT-style text generation system built using TensorFlow and Keras. Train your own mini GPT on custom text data and generate human-like text using just Python!
-
----
-
-## 🚀 Features
-
-- Tokenization with OOV handling  
-- Custom sequence windowing  
-- Transformer block with multi-head attention  
-- Positional encoding for sequential context  
-- End-to-end training pipeline  
-- Softmax sampling with temperature control  
-- Save/load model and tokenizer  
-- Plug-and-play text generation script  
+A full-stack, production-ready GPT-style text generation system built with TensorFlow and Keras. Train your own mini GPT model on custom text data and generate human-like text using Python.
 
 ---
 
-## 📁 Project Structure
+## Features
+
+- Tokenization with out-of-vocabulary (OOV) handling  
+- Custom sequence windowing for training data  
+- Transformer architecture with multi-head attention  
+- Positional encoding for capturing sequential context  
+- End-to-end training pipeline with model saving/loading  
+- Softmax sampling with temperature control for text generation  
+- Modular and extensible codebase for easy customization  
+
+---
+
+## Project Structure
 
 ```
 Make-Your-Own-GPT/
-├── data.txt                   # Training data
-├── tokenizer.pkl              # Saved tokenizer
-├── gpt_test_genai_class.keras  # Trained model
-├── train.py                   # Training logic
-├── generate.py                # Text generation script
-├── model.py                   # Model architecture
-├── utils.py                   # Data utilities
+├── data/                      # Folder containing training data files
+│   ├── data.txt               # Default training data
+│   └── data_large.txt         # Larger training dataset
+├── inference/                 # Text generation scripts
+│   └── generate_text.py       # Script to generate text from trained model
+├── models/                    # Model architecture files
+│   └── gpt_model.py           # GPT model definition
+├── training/                  # Training utilities and scripts
+│   ├── dataset.py             # Dataset preparation utilities
+│   ├── tokenizer_util.py      # Tokenizer utilities
+│   └── train.py               # Training script
+├── utils/                     # Helper utilities
+│   └── positional_encoding.py # Positional encoding implementation
+├── saved/                     # Folder for saved models and tokenizers
+├── README.md                  # Project documentation
 ├── requirements.txt           # Python dependencies
-├── .gitignore                 # Git exclusions
-└── README.md                  # Project documentation
+└── main.py                    # Main entry point (if applicable)
 ```
 
 ---
 
-## ⚙️ Setup
+## Setup
+
+1. Clone the repository:
 
 ```bash
-# Clone the repo
 git clone https://github.com/yourusername/make-your-own-gpt.git
 cd make-your-own-gpt
+```
 
-# Create a virtual environment
+2. Create and activate a virtual environment:
+
+```bash
 python -m venv venv
-source venv/bin/activate  # Windows: venv\Scripts\activate
+# On Windows
+venv\Scripts\activate
+# On Unix or MacOS
+source venv/bin/activate
+```
 
-# Install dependencies
+3. Install dependencies:
+
+```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## 🏋️ Train the Model
+## Training the Model
 
-1. Put your training data in `data.txt`
-2. Run:
+1. Place your training data in the `data/` folder (e.g., `data/data.txt`).
+
+2. Run the training script:
 
 ```bash
-python train.py
+python training/train.py
 ```
 
 This will:
-- Tokenize text  
+- Tokenize the text data  
 - Create training sequences  
-- Build and train the transformer  
-- Save the model and tokenizer  
+- Build and train the transformer model  
+- Save the trained model and tokenizer in the `saved/` folder  
 
 ---
 
-## 📝 Generate Text
+## Generating Text
+
+Run the text generation script:
 
 ```bash
-python generate.py
+python inference/generate_text.py
 ```
 
-You can customize the prompt inside `generate.py`:
+You can customize the prompt inside `generate_text.py`:
 
 ```python
-seed_text = "Intermarche - AI Chatbot"
+seed_text = "Your prompt here"
 generated = generate_text(seed_text, model, tokenizer, num_tokens=500, temperature=1.0)
 print(generated)
 ```
 
 ---
 
-## 🔧 Model Settings
+## Model Configuration
 
-Edit these in `train.py` or `model.py`:
+Adjust these parameters in `training/train.py` or `models/gpt_model.py` to customize the model:
 
 ```python
 vocab_size = 5000
@@ -103,34 +121,35 @@ epochs = 10
 
 ---
 
-## 🧠 Sample Output
+## Sample Output
 
 ```
-Input: Intermarche - AI Chatbot
+Input: Your prompt here
 
 Output:
-Intermarche - AI Chatbot is an intelligent assistant built to support customers by leveraging generative models and real-time feedback. The system learns continuously and adapts to evolving queries...
+Your prompt here is an intelligent assistant built to support users by leveraging generative models and real-time feedback. The system learns continuously and adapts to evolving queries...
 ```
 
 ---
 
-## 📦 Requirements
+## Requirements
 
-- Python 3.8+
-- TensorFlow 2.x
-- NumPy
-- tqdm (optional)
-
----
-
-## 📜 License
-
-MIT License. Free to use and modify.
+- Python 3.8 or higher  
+- TensorFlow 2.x  
+- NumPy  
+- tqdm (optional)  
 
 ---
 
-## 👨‍💻 Author
+## License
 
-Made by **Amaninder**  
+This project is licensed under the MIT License. Feel free to use and modify it.
+
+---
+
+## Author
+
+**Amaninder**  
 AI/ML Developer | GPT Enthusiast | Builder of Smart Systems  
-[LinkedIn](https://www.linkedin.com/in/amaninder-singh-826613112/) • speaktoamaninder@gmail.com
+[LinkedIn](https://www.linkedin.com/in/amaninder-singh-826613112/)  
+Email: speaktoamaninder@gmail.com
