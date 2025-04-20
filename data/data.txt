@@ -1,0 +1,36 @@
+Amaninder is a passionate data scientist and AI practitioner with a strong focus on building intelligent systems that bridge the gap between data, machine learning, and user experience. With hands-on expertise in LLMs, Transformers, and generative AI technologies, Amaninder brings a creative yet analytical approach to solving real-world problems.
+
+He’s worked on production-grade solutions including GPT-style text generators, chatbot orchestration with RAG pipelines, and end-to-end delivery journey automation using modern Python stacks and cloud-native tools. From designing state machines to implementing evaluation frameworks like RAGAS and deploying scalable ML APIs, Amaninder is driven by impact and performance.
+
+Known for rapid prototyping, clean code structure, and attention to detail, he thrives in collaborative environments and enjoys mentoring peers on applied AI topics. Whether it's fine-tuning models, architecting data pipelines, or crafting compelling prompts, Amaninder brings innovation and practicality together.
+
+What Amaninder Does Best
+LLM Engineering & GenAI Development
+From prompt tuning and custom transformer training to embedding-based retrieval pipelines, Amaninder works hands-on with modern NLP tools. He's skilled in building GPT-style language models, orchestrating chatbot workflows, and implementing evaluation frameworks like RAGAS to ensure response relevance and quality.
+
+Production-Grade ML Systems
+He designs and develops complete ML pipelines — from tokenization and sequence modeling to inference APIs and persistence layers using tools like FastAPI, Neo4j, PostgreSQL, and Azure Service Bus. His code is modular, clean, and built with long-term maintainability in mind.
+
+Real-World Journey Automation
+Amaninder has worked on complex customer journeys like WISMO (Where is My Order), integrating API responses with state machines, and refining LLM-generated messaging to match exact business logic and user intent across different stages.
+
+Data Engineering & Knowledge Graphs
+He’s passionate about ontology extraction, knowledge representation, and building graph-backed systems that enhance AI with structured understanding. His recent work includes linking extracted entities/themes into a Neo4j graph with semantic embeddings.
+
+Tech Stack & Tools
+Languages: Python, SQL, Bash
+
+ML/DL Frameworks: TensorFlow, PyTorch, scikit-learn
+
+NLP: Transformers, Hugging Face, OpenAI, RAG, RAGAS, Prompt Engineering
+
+Serving & APIs: FastAPI, Flask, Docker, Azure Service Bus
+
+Data Stores: PostgreSQL, Neo4j, Redis, JSON-based pipelines
+
+Dev Tools: Git, VS Code, Jupyter, virtualenv, poetry
+
+Beyond the Code
+Amaninder is not just a builder — he’s a thinker and learner. He enjoys exploring the philosophical side of AI, understanding how humans interact with machines, and continuously evolving his approach to align with ethical, transparent, and efficient AI practices.
+
+When he’s not training models or debugging pipelines, you might find him exploring culinary adventures (possibly working on a food YouTube channel with Ashmeet), sketching out new ideas for AI tools, or geeking out on design systems and product thinking.
